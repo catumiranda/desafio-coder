@@ -1,0 +1,342 @@
+
+/*Estilos generales*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* background-color:#fffdfd; */
+    font-size: 1em;
+    margin: 0em;
+    background-color: #fffefe;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+#logo {
+    text-align: center;
+}
+
+hr {
+    width: 95%;
+}
+
+/*Grid*/
+
+.grid {
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    gap: 11px 0px;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+    color: #131312;
+}
+
+footer {
+    grid-area: footer;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    color: #131312;
+}
+
+
+/* catgorías menu */
+
+.sticky {
+    position:sticky;
+    top:0px;
+}
+
+.menu {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+
+    background-color: #098b76;
+    color: honeydew;
+    text-decoration: none;
+    height: 50px;
+    padding: 25px 0px 0px 15px;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 200px 0px 200px;
+    text-align: center;
+    }
+
+.menu ul li {
+    list-style: none;
+    padding-bottom: 0.3em;
+}
+
+.menu ul li:hover {
+    border-bottom: 2px solid aliceblue;
+}
+
+/* Destacados */
+
+.destacado {
+    font-weight: bold;
+    width: 1000px;
+    font-size: 1.4em;
+    margin: auto;
+    text-align: center;
+
+}
+
+.destacado p {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2em;
+    color: #001613;
+}
+
+.destacado span {
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
+    font-weight: 1000;
+}
+
+.destacado h2{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+/* catgorías footer */
+
+footer {
+    margin-top: 3em;
+}
+
+ footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 600px 50px 600px;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+
+/* Inicio */
+
+.preguntas-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.texto-home {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0em;
+}
+
+.texto-home img {
+    height: 100%;
+    width: 100%;
+}
+
+.texto-piezas {
+    width: 600px;
+   
+}
+
+.texto-piezas span {
+    width: 500px;
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+/* Productos */
+
+.productos {
+    width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.producto-individual {
+    display: flex;
+    flex-direction: column;
+    margin: 3em 0em 0em 0em;
+}
+
+.producto-individual figure {
+    transition: transform .2s; /* Animation */
+}
+
+.producto-individual figure:hover {
+    transform: scale(1.5);
+}
+
+.texto-productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    border: 1px solid #292828;
+    width: 200px;
+    background-color: #098b76;
+    color: aliceblue;
+}
+
+.texto-productos p {
+    margin: auto;
+    padding: 0.2em; 
+}
+
+
+/*HTML El taller*/
+
+.taller {
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+}
+
+.explicacion-taller {
+    width: 1000px;
+    align-content: center;
+}
+
+/* Destacados */
+
+.faq {
+    width: 1200px;
+    margin: auto;
+}
+
+.faq ul {
+    list-style: none;
+}
+
+.faq ul div {
+    padding: 2em 0em 2em 0em;
+}
+
+.faq ul div li {
+    padding: 1em 0em 1em 0em;
+}
+
+/*Como comprar*/
+
+.como-comprar h1 {
+    text-align: center;
+}
+
+.como-comprar {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.como-comprar div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+
+
+/* .destacado-taller {
+    text-align: start;
+    font-weight: bold;
+    width: 1000px;
+    font-size: 1.5em;
+} */
+
+/* .destacado-taller p {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    color: #001613;
+} */
+
+/* .destacado-taller strong {
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
+    font-weight: 1000;
+} */
+
+/* .taller {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+
+/* .taller img {
+    max-width: 500px;
+} */
+
+/*Bloque de contenido en la página*/
+
+/* .contenido {
+    padding: 0px 30px 0px 30px;
+    margin: 0em;
+} */
+
+
+/* ul {
+    list-style-type: circle;
+} */
+
+/*Tablas*/
+
+/* .tabla {
+    background-color: #e7e9e8;
+    width: 500px;
+    color: #497764;
+    border: #066b5a solid;
+    padding: 10px;
+} */
+
+/* .como-comprar {
+    text-align: center;
+} */
+
+/*Imágenes*/
+
+.imagen-inicio img {
+    width: 100%;
+    text-align: center;
+}
+
+/*FAQ*/
+
+/* .faq {
+    width: auto;
+}   */
